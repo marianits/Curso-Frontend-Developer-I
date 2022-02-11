@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba absolute</title>
+    <style>
+    .item {
+        width: 100px;
+        height: 100px;
+        background: purple;
+        border: 2px black dotted;
+    }
+
+    .item:nth-child(1){
+        background: cyan;
+        position: relative;
+        top:20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="item">One</div>
+    <div class="item">Two</div>
+    <div class="item">Three</div>
+    <div class="item">Four</div>
+</body>
+</html>

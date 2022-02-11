@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    html, body {
+     margin:0px;
+    }
+    section {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: bisque;
+    }
+    .card {
+      width: 400px;
+      height: 600px;
+      background: #A61420;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .profile-pic {
+      border-radius: 50%; 
+      width: 150px; 
+      height: 150px;
+      position: absolute;
+      top: 15%;
+      right: 30%;
+      background-image: url(./Perfil.PNG);
+      background-position: center;
+      background-size: cover;
+      border: 4px solid white;
+      
+    }
+
+    h2 {
+      text-align: center;
+      position: absolute;
+      top: 38%;
+      left: 26%;
+      color: white;
+      font-family: Georgia, serif;
+    }
+
+    h3{
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        font-family: 'Courier New', monospace;
+        color: white;
+    }
+    
+    .datos{
+        display: flex;
+        align-items: center;
+        height: 150px;
+        width: 80%;
+        left: 10%;
+        border: 4px solid white;
+        bottom: 10%;
+        position: absolute;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70px ;
+        height: 120px ;
+        margin: 5%;
+    }
+
+    .imagen{
+        border: 2px solid white;
+        border-radius: 60%; 
+        width: 52px ;
+        height: 52px ;
+        position: relative;
+    }
+    .imagen img{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 5%;
+      left: 12%;
+    }
+
+    #a1{
+      top: 15%;
+      left: 5%;
+    }
+
+    #a2{
+      top: 10%;
+      left: 14%;
+    }
+
+    h5{
+      position: absolute;
+      bottom: 5%;
+      color: white;
+    }
+
+    
+    
+  </style>
+</head>
+<body>
+  <section>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/10262654/pexels-photo-10262654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="subway">
+      <div class="profile-pic"></div>
+      <h2>Mariana Arnez</h2>
+      <h3>Futura Data Scientist, Viajera y Foodie de postres</h3>
+      <div class="datos">
+        <div class="item">
+          <div class="imagen">
+            <img src="./airplane.png" alt="avioncito" id="a1"> 
+          </div>
+          <h3>57</h3>
+          <h5>Vuelos</h5>
+        </div>
+        <div class="item">
+          <div class="imagen">
+             <img src="./briefing.png" alt="proyectos" id="a2"> 
+          </div>
+          <h3>99</h3>
+          <h5>Proyectos</h5>
+        </div>
+        <div class="item">
+          <div class="imagen">
+            <img src="./cake.png" alt="postres"> 
+          </div>
+          <h3>155</h3>
+          <h5>Postres</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
